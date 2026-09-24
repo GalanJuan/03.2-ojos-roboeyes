@@ -21,7 +21,7 @@ inline void initI2C() {
 // TODO 1.2: Barre el rango completo de direcciones e informa cada dispositivo hallado y el conteo final.
 // Pregunta Guía: ¿Cómo sabes que el barrido cubrió todo el rango si el monitor solo muestra un conteo?
 // Pista: La guía §05 muestra el barrido esperado línea por línea.
-inline void scanI2C() {
+inline void scanI2C() {98
     /* ESCRIBE TU CÓDIGO AQUÍ */
 }
 
