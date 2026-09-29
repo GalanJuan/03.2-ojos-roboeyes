@@ -22,14 +22,8 @@ RoboEyes<Adafruit_SSD1306> roboEyes(display);
 
 // TODO 3.1: Inicializa los ojos con las dimensiones del panel y el objetivo de cuadros por segundo de config.h.
 // Pregunta Guía: ¿Qué tres números necesita la inicialización y de dónde sale cada uno?
-inline void initEyes() {
-    // [MODIFICACIÓN] Se inicializa el objeto roboEyes pasando los 3 parámetros requeridos:
-    // 1. Ancho del panel (OLED_WIDTH desde config.h)[cite: 5, 11]
-    // 2. Alto del panel (OLED_HEIGHT desde config.h)[cite: 5, 11]
-    // 3. Tasa de cuadros por segundo (FRAME_RATE / 60 fps desde config.h)[cite: 5, 11]
+inline void initEyes() { 
     roboEyes.begin(OLED_WIDTH, OLED_HEIGHT, FRAME_RATE);
-    
-    // [MODIFICACIÓN REQUERIDA] Se informa por el Monitor Serie que los ojos están listos a la frecuencia establecida
     Serial.printf("[EYES] RoboEyes listo a %d fps\n", FRAME_RATE);
 }
 
