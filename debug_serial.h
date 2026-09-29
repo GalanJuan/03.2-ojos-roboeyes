@@ -9,7 +9,7 @@
 
 #include <Arduino.h>
 #include "config.h"
-#include "eyes.h"
+
 
 // TODO 4.1: Publica el bloque de ayuda con las 7 expresiones y la tecla de ayuda.
 // Pregunta Guía: ¿Qué debe ver un compañero que abre el monitor por primera vez?
